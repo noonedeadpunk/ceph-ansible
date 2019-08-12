@@ -21,7 +21,7 @@ ceph_conf_overrides:
 devices:
   - '/dev/disk/by-id/ata-QEMU_HARDDISK_QM00001'
   - /dev/sdb
-openstack_config: True
+openstack_config: False
 openstack_glance_pool:
   name: "images"
   pg_num: "{{ hostvars[groups[mon_group_name][0]]['osd_pool_default_pg_num'] }}"
